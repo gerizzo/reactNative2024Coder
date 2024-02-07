@@ -42,7 +42,7 @@ export default function App() {
           placeholder='Ingresar Recordatorio :D'
           style={styles.input}
         />
-        <Button title='ADD' onPress={addRecordatorio}/>
+        <Button title='Agregar' onPress={addRecordatorio}/>
       </View>
       <View style={styles.recordatoriosContainer}>
         <FlatList 
@@ -51,7 +51,7 @@ export default function App() {
           renderItem={({item}) => (
             <View style={styles.recordatorioCard}>
               <Text style={styles.text}>{item.titulo}</Text>
-              <Button title='DEL' onPress={() => onHandlerDelete(item.id)} />
+              <Button title='Borrar' style={styles.boton} onPress={() => onHandlerDelete(item.id)} />
             </View>
           )}
         />
@@ -63,36 +63,43 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#9AF5FA',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingHorizontal: 20,
   },
   inputContainer: {
+    marginTop: 100,
     alignItems: "center",
-    justifyContent: "space-around",
-    flexDirection: 'row'
+    justifyContent: "center",
+    flexDirection: 'row',
+    marginBottom: 20,
   },
   input: {
-    width: 250,
+    flex: 1,
     borderBottomWidth: 2,
     borderBottomColor: "black",
-    margin: 10,
+    marginHorizontal: 10,
     paddingVertical: 5,
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
   },
   recordatoriosContainer: {
-    padding: 10
+    flex: 1,
+    width: '100%',
   },
   recordatorioCard: {
     flexDirection: "row",
-    padding: 20,
-    marginVertical: 10,
     alignItems: "center",
-    borderRadius: 5
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    padding: 20,
+    marginBottom: 10,
   },
   text: {
-    width: "70%",
+    flex: 1,
     color: "black",
-    fontSize: 15
+    fontSize: 15,
   }
 });
+
