@@ -2,13 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Home from './src/screens/Home'
-
-
-
-
-
-
-
+import RestaurantByCategory from './src/screens/RestaurantByCategory'
 
 const App = () => {
 
@@ -16,12 +10,15 @@ const App = () => {
   const comidaSelecionada = (food) => {
     setFoodSelected(food)
   }
-  useEffect(() => {
-    console.log(foodSelected)
-  }, [foodSelected])
-
   return (
-    <Home comidaSelecionada={comidaSelecionada}/>
+    <>
+    {foodSelected ? 
+              <RestaurantByCategory/>
+              :
+              <Home comidaSelecionada={comidaSelecionada}/>
+    }
+    </>
+
   )
 }
 
