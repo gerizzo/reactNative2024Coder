@@ -1,0 +1,97 @@
+[
+  {
+    "nombre": "Sushi Palace",
+    "ubicacion": "Calle Principal 123",
+    "tipos_comida": ["sushi"],
+    "menu": [
+      {
+        "nombre_plato": "Sushi Deluxe",
+        "precio": 7500,
+        "imagen": "url_imagen_sushi_deluxe.jpg"
+      },
+      {
+        "nombre_plato": "Sashimi Variado",
+        "precio": 8900,
+        "imagen": "url_imagen_sashimi_variado.jpg"
+      }
+    ]
+  },
+  {
+    "nombre": "Pizzeria Bella Napoli",
+    "ubicacion": "Avenida Central 456",
+    "tipos_comida": ["pizzas", "empanadas"],
+    "menu": [
+      {
+        "nombre_plato": "Pizza Margarita",
+        "precio": 5000,
+        "imagen": "url_imagen_margarita.jpg"
+      },
+      {
+        "nombre_plato": "Pizza Pepperoni",
+        "precio": 5800,
+        "imagen": "url_imagen_pepperoni.jpg"
+      },
+      {
+        "nombre_plato": "Empanada de Carne",
+        "precio": 3500,
+        "imagen": "url_imagen_empanada_carne.jpg"
+      },
+      {
+        "nombre_plato": "Empanada de Pollo",
+        "precio": 3200,
+        "imagen": "url_imagen_empanada_pollo.jpg"
+      }
+    ]
+  },
+  {
+    "nombre": "El Milanesa",
+    "ubicacion": "Plaza Libertad 789",
+    "tipos_comida": ["milanesas"],
+    "menu": [
+      {
+        "nombre_plato": "Milanesa Napolitana",
+        "precio": 4200,
+        "imagen": "url_imagen_milanesa_napo.jpg"
+      },
+      {
+        "nombre_plato": "Milanesa a Caballo",
+        "precio": 3800,
+        "imagen": "url_imagen_milanesa_caballo.jpg"
+      }
+    ]
+  },
+  {
+    "nombre": "Burgerlandia",
+    "ubicacion": "Calle de las Hamburguesas 321",
+    "tipos_comida": ["hamburguesas"],
+    "menu": [
+      {
+        "nombre_plato": "Hamburguesa Clásica",
+        "precio": 4500,
+        "imagen": "url_imagen_hamburguesa_clasica.jpg"
+      },
+      {
+        "nombre_plato": "Hamburguesa Deluxe",
+        "precio": 6800,
+        "imagen": "url_imagen_hamburguesa_deluxe.jpg"
+      }
+    ]
+  },
+  {
+    "nombre": "Empanadas Ricas",
+    "ubicacion": "Avenida Empanada 567",
+    "tipos_comida": ["empanadas"],
+    "menu": [
+      {
+        "nombre_plato": "Empanada de Carne",
+        "precio": 3200,
+        "imagen": "url_imagen_empanada_carne.jpg"
+      },
+      {
+        "nombre_plato": "Empanada de Pollo",
+        "precio": 3000,
+        "imagen": "url_imagen_empanada_pollo.jpg"
+      }
+    ]
+  }
+]
