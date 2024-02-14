@@ -15,7 +15,7 @@ const RestaurantByCategory = () => {
             <Text style={styles.restaurantLocation}>{item.ubicacion}</Text>
           </View>
         )}
-        contentContainerStyle={styles.flatListContainer} // Nuevo estilo para la FlatList
+        contentContainerStyle={styles.flatListContainer} 
       />
     </View>
   );
@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   flatListContainer: {
-    paddingBottom: 20, // Margen inferior de la FlatList
+    paddingBottom: 20, 
   },
 });
