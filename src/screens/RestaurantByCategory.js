@@ -1,10 +1,12 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Pressable } from 'react-native';
 import React from 'react';
 import restaurantes from '../utils/data/restaurantes.json';
+import Header from '../components/Header';
 
 const RestaurantByCategory = () => {
   return (
     <View style={styles.container}>
+      <Header/>
       <Text style={styles.title}>RESTAURANTES EN TU ZONA</Text>
       <FlatList
         data={restaurantes}
@@ -54,5 +56,5 @@ const styles = StyleSheet.create({
   },
   flatListContainer: {
     paddingBottom: 20, 
-  },
+  }
 });
