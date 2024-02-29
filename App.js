@@ -1,26 +1,14 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import React, { useState } from 'react';
-import Home from './src/screens/Home';
-import RestaurantByCategory from './src/screens/RestaurantByCategory';
-
-const Stack = createStackNavigator();
+import { StyleSheet, Text, View } from 'react-native'
+import React, { useState } from 'react'
+import MainNavigation from './src/navigation/MainNavigation'
 
 const App = () => {
-  const [foodSelected, setFoodSelected] = useState("");
-
-  const comidaSelecionada = (food) => {
-    setFoodSelected(food);
-  }
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="RestaurantByCategory" component={RestaurantByCategory} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    <MainNavigation/>
+  )
 }
 
-export default App;
+export default App
+
+const styles = StyleSheet.create({})

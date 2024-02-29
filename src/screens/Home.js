@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-native';
-import Categories from '../components/Categories'
-import HeaderHome from '../components/HeaderHome';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import Categories from '../components/Categories';
+import Header from '../components/Header';
 
-export default function Home({comidaSelecionada}) {
+export default function Home({ navigation }) {
+  const comidaSeleccionada = (item) => {
+    navigation.navigate('Restaurantes En Tu Zona', { selectedFood: item });
+  };
+
   return (
     <View style={styles.container}>
-        <HeaderHome/>
-        <Categories comidaSelecionada={comidaSelecionada}/>
+      <Header />
+      <Categories comidaSeleccionada={comidaSeleccionada} />
     </View>
   );
 }
@@ -17,4 +21,3 @@ const styles = StyleSheet.create({
     flex: 1,
   }
 });
-

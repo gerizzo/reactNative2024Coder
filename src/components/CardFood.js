@@ -1,9 +1,9 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-const CardFood = ({ item, comidaSelecionada }) => {
+const CardFood = ({ item, comidaSeleccionada }) => {
   return (
-    <Pressable onPress={() => comidaSelecionada(item)}>
+    <Pressable onPress={() => comidaSeleccionada(item)}>
       <View style={styles.container}>
         <Text>{item.tipo_comida}</Text>
       </View>
